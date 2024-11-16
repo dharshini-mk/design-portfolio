@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.header {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(0, 0, 0);
+}
+
+.header div {
+    display: flex;
+    padding: 10px;
+    padding-left: 1000px;
+}
+
+.text p {
+    color: white;
+    font-weight: bold;
+    padding-right: 50px;
+    padding-top: 20px;
+}
+
+.text p:hover {
+    color: rgb(120, 147, 138);
+    cursor: pointer;
+}
+
+.home {
+    width: 100%;
+    background-color: black;
+}
+
+.left {
+    width: 50%;
+    background-color: black;
+    color: white;
+    height: 435px;
+    padding-top: 180px;
+    padding-left: 100px;
+}
+
+.right {
+    width: 50%;
+    background-color: rgb(0, 0, 0);
+}
+
+.hello {
+    font-size: 50px;
+}
+
+.name {
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.hr {
+    display: flex;
+    margin-top: 40px;
+}
+
+.hire, .resume {
+    padding: 10px;
+    border-style: solid;
+    background-color: rgb(120, 147, 138);
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.hire:hover, .resume:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.about {
+    width: 82.2%;
+    height: 540px;
+    background-color: rgb(0, 0, 0);
+    padding-top: 40px;
+    padding-bottom: 120px;
+    padding-left: 170px;
+    padding-right: 100px;
+    color: white;
+}
+
+.am {
+    width: 95%;
+    height: 500px;
+    background-color: rgb(120, 147, 138);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-top: 80px;
+}
+
+.am p {
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: x-large;
+}
+
+.resume {
+    color: white;
+    text-decoration: none; 
+    cursor: pointer;
+}
+
+.icons {
+    display: flex;  
+    gap: 20px;   
+    padding-top: 20px;
+    size: 100px;
+}
+
+.icons .fa {
+    color: white;    
+    cursor: pointer; 
+    transition: color 0.3s ease; 
+}
+
+.icons .fa:hover {
+    color: #0077b5; 
+}
+
+.icons .fa-instagram:hover {
+    color: #e4405f;
+}
+
+.icons .fa-linkedin:hover {
+    color: #0e76a8;  
+}
+
+.icons .fa-github:hover {
+    color: #333;     
+}
+
+.icons .fa-phone:hover{
+    color: green;
+}
+.icons .fa-envelope:hover{
+    color: red;
+}
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-y: hidden; /* Prevent vertical scrolling */
+    white-space: nowrap; /* Ensure items are displayed in a single row */
+    scroll-behavior: smooth; /* Smooth scrolling effect */
+}
+
+.carousel {
+    display: inline-flex; /* Keep items in a row */
+    gap: 20px; /* Space between items */
+    padding: 10px;
+}
+
+.carousel-item {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    white-space: normal; /* Allow wrapping for individual items if needed */
+}
+
+.image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    flex-shrink: 0; /* Prevent shrinking for items */
+}
+
+.image-wrapper img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+.image-wrapper:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.project {
+    background-color: black;
+    color: white;
+}
+
+/* Styles for the modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Dimmed background */
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+/* Show the modal when it is active */
+.modal.active {
+    display: flex;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .overlay img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+  }
+  

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="App">
+        <div class="header">
+            <div class="text">
+                <p onclick="scrollToHome()">Home</p>
+                <p onclick="scrollToAbout()">About</p>
+                <p onclick="scrollToProject()">Projects</p>
+            </div>
+        </div>
+        <div class="home" id="home">
+            <div class="left">
+                <p class="hello">Hello, I'm</p><br>
+                <p class="name">Dharshini M K.</p>
+                <div class="hr">
+                    <a href="Dharshini M K.pdf" download>
+                        <p class="resume">Get Resume</p>
+                    </a>
+                </div>
+                <div class="icons">
+                    <!-- Instagram Icon -->
+                    <a href="https://www.instagram.com/creative.confetti_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                
+                    <!-- LinkedIn Icon -->
+                    <a href="https://www.linkedin.com/in/dharshinimk" target="_blank" rel="noopener noreferrer">
+                      <i class="fab fa-linkedin"></i>
+                    </a>
+                
+                    <!-- GitHub Icon -->
+                    <a href="https://github.com/dharshini-mk" target="_blank" rel="noopener noreferrer">
+                      <i class="fab fa-github"></i>
+                    </a>
+                
+                    <a href="tel:+917010347164">
+                        <i class="fas fa-phone"></i>
+                      </a>
+
+                    <a href="mailto:mkdharshini24@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </a>
+
+                  </div>
+            </div>
+            <div class="right">
+                <!-- Empty Section for Right Side -->
+            </div>
+        </div>
+        
+        <div class="about" id="about">
+            <center><h1>About me</h1></center><br>
+            <div class="am">
+                <p>Hi there! I’m a Computer Science and Engineering student who loves exploring the exciting intersection of creativity and technology. My journey in design started with Canva, where I discovered my passion for bringing ideas to life visually. Since then, I’ve been diving into Photoshop, learning new techniques, and experimenting with other design tools to keep improving and expanding my skill set.</p><br>
+                <p>Design, for me, is all about telling a story through visuals—creating something that catches the eye and resonates with people. I enjoy working in collaborative environments where ideas flow freely, and I can contribute my creativity while learning from others.</p><br>
+                <p>I’m always looking for opportunities to grow, try new things, and take on challenges that push me to be better. Whether it’s designing graphics, exploring new tools, or refining my craft, I’m excited to see where this journey takes me and how I can make a meaningful impact through design.</p><br>
+            </div>
+        </div>
+        
+        <div class="project" id="project">
+            <center><h1>Projects Done</h1></center>
+            <br>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <!-- Project Images -->
+                    <div class="carousel-item">
+                        <div class="image-wrapper">
+                            <img src="Banner.svg" alt="Banner">
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="Invitation.svg" alt="Invitation">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="image-wrapper">
+                            <img src="IMG-20241115-WA0086.jpg" alt="IMG 1">
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="IMG-20241115-WA0083.jpg" alt="IMG 2">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="image-wrapper">
+                            <img src="IMG-20241115-WA0084.jpg" alt="IMG 3">
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="IMG-20241115-WA0085.jpg" alt="IMG 4">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="image-wrapper">
+                            <img src="IMG-20241115-WA0082.jpg" alt="IMG 5">
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="IMG-20241115-WA0081.jpg" alt="IMG 6">
+                        </div>
+                        <div class="carousel-item">
+                            <div class="image-wrapper">
+                                <img src="IMG-20241115-WA0088.jpg" alt="IMG 7">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="image-wrapper">
+                                <img src="WhatsApp Image 2024-11-15 at 07.09.13_ec1b08ec.jpg" alt="IMG 8">
+                            </div>
+                            <div class="image-wrapper">
+                                <img src="WhatsApp Image 2024-11-15 at 07.09.13_831af1cd.jpg" alt="IMG 9">
+                            </div>     
+                            <div class="carousel-item">
+                                <div class="image-wrapper">
+                                    <img src="Screenshot 2024-11-17 021436.png" alt="IMG 10">
+                                </div>        
+            </div>
+        </div>
+        
+        <div class="modal" id="imageModal">
+            <span class="modal-close" id="closeModal">&times;</span>
+            <img src="" alt="Full View" id="modalImage">
+        </div>
+                
+    <script>
+        function scrollToAbout() {
+          document.getElementById("about").scrollIntoView({
+            behavior: 'smooth'
+          });
+        }
+        function scrollToHome() {
+          document.getElementById("home").scrollIntoView({
+            behavior: 'smooth'
+          });
+        }
+        function scrollToProject() {
+          document.getElementById("project").scrollIntoView({
+            behavior: 'smooth'
+          });
+        }
+        const images = document.querySelectorAll('.carousel-item img');
+
+images.forEach(image => {
+  image.addEventListener('click', function() {
+    const imageSrc = image.src;  // Get the clicked image source
+    const fullScreenImg = document.createElement('img');
+    fullScreenImg.src = imageSrc;  // Set the source to the full-screen image
+    fullScreenImg.style.width = '100%';  // Make it large enough to view
+    fullScreenImg.style.height = 'auto';
+
+    // Create a lightbox-like effect
+    const overlay = document.createElement('div');
+    overlay.classList.add('overlay');
+    overlay.style.position = 'fixed';
+    overlay.style.top = 0;
+    overlay.style.left = 0;
+    overlay.style.width = '100vw';
+    overlay.style.height = '100vh';
+    overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+    overlay.style.display = 'flex';
+    overlay.style.alignItems = 'center';
+    overlay.style.justifyContent = 'center';
+    overlay.appendChild(fullScreenImg);
+
+    // Close the image when clicked on the overlay
+    overlay.addEventListener('click', function() {
+      overlay.remove();  // Remove overlay when clicked
+    });
+
+    document.body.appendChild(overlay);  // Add the overlay to the body
+  });
+});
+
+
+      </script>
+</body>
+
+</html>
